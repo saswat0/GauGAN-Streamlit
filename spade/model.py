@@ -88,7 +88,7 @@ class Pix2PixModel(torch.nn.Module):
         if not opt['isTrain']:
             netG = self.load_network(netG, 'G', opt['which_epoch'], opt)
 
-        self.print_network(netG)
+        # self.print_network(netG)
 
         return netG
 
