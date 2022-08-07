@@ -47,11 +47,11 @@ with col1:
 
 @st.cache
 def download_model():
-    f_checkpoint = os.path.join("checkpoint.pth")
+    f_checkpoint = os.path.join("latest_net_G.pth")
     if not os.path.exists(f_checkpoint):
         with st.spinner("Downloading model"):
             url = 'https://drive.google.com/uc?id=1Re_BXwTWteZIjj8ahnRQiGcOOHJ_B41N'
-            output = 'checkpoint.pth'
+            output = 'latest_net_G.pth'
             gdown.download(url, output, quiet=False)
 
 
